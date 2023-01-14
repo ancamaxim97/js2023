@@ -7,21 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-   var nume = 'Adrian';
+  <script>
     
-   function schimbaNume(){
-         nume = 'Ion';
+    function nrToChar(n){
+        return String.fromCharCode(n);
     }
-    console.log(nume);
-    schimbaNume();
-    console.log(nume); 
+    for(let i = 33; i <=127; i++){
+        let char = nrToChar(i);
+        console.log(`nr este ${i} caracterul este ${char}`)
+    }
 
-   
 
-
-   </script>
+  </script>
     
+
+
 
 
 

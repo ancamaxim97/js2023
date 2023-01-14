@@ -8,28 +8,17 @@
 </head>
 <body>
     <script>
-        var i = 1;
-        function primaFunctie(){
-            i = i + 1;
-            document.write('<p>Buna seara!</p>');
-            if( i<=10 ){
-              primaFunctie();  
-            }
-            
+        
+        const persoana = {
+            nume: 'Popescu',
+            prenume: 'Dan',
+            telefon: '0756789898'
         }
-        
-        
-        primaFunctie();
-        
+        console.log(persoana);
 
-
-
-
-
+         delete persoana.telefon;
+         console.log(persoana);
     </script>
-
-
-
 
 
 
