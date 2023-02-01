@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+       <div>
+        <label>Raza</label>
+        <input type="number"  id="raza" />
+    </div>
+    <div>
+        <label>Inaltime</label>
+        <input type="number" id="inaltime" />
+    </div>
+    <p id="volum"></p>
+    <button onclick="return calculeazaVolum()">Calculeaza</button>
+    <script>
+        let volume = document.getElementById("volum")
+        let radius = document.getElementById("raza")
+        let height = document.getElementById("inaltime")
+        const calculeazaVolum = () => {
+            const message = "Volumul cinlindrului este:"
+            let calculeaza_volum = (Math.pow(raza.value, 2) * Math.PI * inaltime.value).toFixed(2)
+            volum.innerHTML = `${message} ${calculeaza_volum}`
+        }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
